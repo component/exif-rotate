@@ -14,13 +14,13 @@
   <script>
     var rotate = require('exif-rotate');
 
-    function image(n, fn) {
+    function image(n) {
       var src = 'images/' + n + '.JPG';
       var img = new Image;
       img.src = src;
 
-      document.body.appendChild(img);
-      document.body.appendChild(document.createElement('br'));
+      // document.body.appendChild(img);
+      // document.body.appendChild(document.createElement('br'));
 
       img.onload = function(){
         var uri = rotate(img, n);
@@ -31,15 +31,17 @@
         document.body.appendChild(document.createElement('br'));
         document.body.appendChild(document.createElement('br'));
         document.body.appendChild(document.createElement('br'));
-        i.onload = fn;
       };
     }
 
-    image(3, function(){
-      image(6, function(){
-        image(8)
-      })
-    })
+    image(1)
+    image(2)
+    image(3)
+    image(4)
+    image(5)
+    image(6)
+    image(7)
+    image(8)
   </script>
 </body>
 </html>
