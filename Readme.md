@@ -7,10 +7,6 @@
 
     $ component install component/exif-rotate
 
-## API
-
-   
-
 ## License
 
   MIT
