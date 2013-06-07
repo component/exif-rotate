@@ -11,6 +11,8 @@
   "license": "MIT",
   "main": "index.js",
   "component": {
-    "exif-rotate/index.js": "index.js"
+    "scripts": {
+      "exif-rotate/index.js": "index.js"
+    }
   }
 }
