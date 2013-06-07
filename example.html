@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>EXIF rotate</title>
+  <style>
+  img {
+    margin: 10px;
+  }
+  </style>
+</head>
+<body>
+
+  <script src="build/build.js"></script>
+
+  <script>
+    var rotate = require('exif-rotate');
+
+    function image(n, fn) {
+      var src = 'images/' + n + '.JPG';
+      var img = new Image;
+      img.src = src;
+
+      document.body.appendChild(img);
+      document.body.appendChild(document.createElement('br'));
+
+      img.onload = function(){
+        var uri = rotate(img, n);
+        var i = new Image;
+        i.src = uri;
+        document.body.appendChild(i);
+        document.body.appendChild(document.createElement('br'));
+        document.body.appendChild(document.createElement('br'));
+        document.body.appendChild(document.createElement('br'));
+        document.body.appendChild(document.createElement('br'));
+        i.onload = fn;
+      };
+    }
+
+    image(3, function(){
+      image(6, function(){
+        image(8)
+      })
+    })
+  </script>
+</body>
+</html>
