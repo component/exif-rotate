@@ -2,7 +2,13 @@
   "name": "exif-rotate",
   "description": "Rotate an image based on its Orientation EXIF tag",
   "version": "0.0.2",
-  "keywords": ["exif", "rotate", "flip", "image", "photo"],
+  "keywords": [
+    "exif",
+    "rotate",
+    "flip",
+    "image",
+    "photo"
+  ],
   "dependencies": {
     "rotate-component": "1.0.0",
     "flip-component": "1.0.0"
@@ -14,5 +20,9 @@
     "scripts": {
       "exif-rotate/index.js": "index.js"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/exif-rotate.git"
   }
 }
