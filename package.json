@@ -13,7 +13,10 @@
     "rotate-component": "1.0.0",
     "flip-component": "1.0.0"
   },
-  "development": {},
+  "browser": {
+    "rotate": "rotate-component",
+    "flip": "flip-component"
+  },
   "license": "MIT",
   "main": "index.js",
   "component": {
